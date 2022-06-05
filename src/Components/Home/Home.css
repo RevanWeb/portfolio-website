@@ -1,0 +1,122 @@
+.hero-section {
+  background: var(--grey-bg);
+  padding: 3rem 0 4rem;
+}
+.hero-section h4 {
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: 1.5rem;
+}
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+.each-hero-part,
+.each-hero-part-beta {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.each-hero-part-beta {
+  text-align: right;
+}
+.each-hero-part span,
+.each-hero-part-beta span {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  display: block;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+.each-hero-part h5,
+.each-hero-part-beta h5 {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(--color-black);
+}
+.each-hero-part h2,
+.each-hero-part-beta h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.hero-img-block {
+  border: 1rem solid #ffffff;
+  border-radius: 11rem;
+  box-shadow: 5px 5px 15px #ddd;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+.hero-img-block img {
+  border-radius: 10rem;
+  transition: all 0.4s ease-in-out;
+}
+.hero-img-block:hover img {
+  transform: scale(1.2);
+}
+.social-icons-block {
+  position: fixed;
+  height: calc(100% - 106px);
+  width: 2rem;
+  top: 56px;
+  bottom: 50px;
+  left: 0;
+  background: var(--color-white);
+  display: none;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  .each-hero-part h2,
+  .each-hero-part-beta h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-section h1 {
+    font-size: 2.25rem;
+  }
+  .each-hero-part h5,
+  .each-hero-part-beta h5 {
+    font-size: 1rem;
+  }
+  .each-hero-part span,
+  .each-hero-part-beta span {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.99px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .each-hero-part-beta,
+  .each-hero-part {
+    text-align: center;
+  }
+  .hero-img-block {
+    width: 70%;
+    margin: 0 auto 2rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section {
+    padding: 1rem 0;
+  }
+  .each-hero-part-beta,
+  .each-hero-part {
+    text-align: center;
+  }
+  .each-hero-part h5,
+  .each-hero-part-beta h5 {
+    font-size: 1rem;
+  }
+  .hero-img-block {
+    margin-bottom: 2rem;
+  }
+}
